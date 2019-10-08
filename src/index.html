@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c68af36f4c.js" crossorigin="anonymous"></script>
+
+
+    <title>Scoreboard</title>
+</head>
+<body>
+    <!-- Scoreboard -->
+    <section>
+        <div class="container">
+            <div class="sb-background mx-auto">
+                <i class="fas fa-caret-left float-left ml-5 mt-3" id="home-possession-display"></i>
+                <div class="float-left bonus">
+                    <i id="home-bonus-display" class="fas fa-circle"></i>
+                    <p><strong>BONUS</strong></p>
+                </div>
+                <i class="fas fa-caret-right float-right mr-5 mt-3" id=away-possession-display></i>
+                <div class="float-right text-right bonus">
+                        <i id="away-bonus-display" class="fas fa-circle"></i>
+                        <p><strong>BONUS</strong></p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 mt-3">
+                        <div class="timer mx-auto">
+                            <div class="pl-4 ledborder" id="clock">00:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100 mx-auto justify-content-between align-items-start">
+                    <div class="col-3 ml-5">
+                        <span class="float-left text-left" id="team-home"><strong>HOME</strong></span>
+                        <div class="float-left mt-2" id="score-home">00</div>
+                    </div>
+                    <div class="col-3 text-center mt-3">
+                        <span><strong>PERIOD</strong></span>
+                        <div class="clear-both period mx-auto pl-2 mt-2" id="period-display">1</div>
+                    </div>
+                    <div class="col-3 mr-5">
+                        <span class="float-right text-right" id="team-away"><strong>AWAY</strong></span>
+                        <div class="float-right mt-2" id="score-away">00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Controller -->
+    <section class="controller-body mt-4">
+        <div class="container-fluid">
+            <h5 class="mr-3 mt-2 text-center true-lies">CLOCK</h5>
+            <div class="text-center">
+                <label class="true-lies" >SET TIME</label>
+                <input class="ml-3 mt-2" id="set-time"></input>
+                <button class="btn-timer ml-2" id="start-timer">START</button>
+            </div>
+            <div class="text-center mt-2">
+                <button class="btn-timer" id="stop-timer">STOP</button>
+                <button class="ml-3 btn-timer" id="resume-timer">RESUME</button>
+            </div>
+
+                <div class="text-center controller-score">
+                    <h5 class="true-lies">HOME SCORE</h5>
+                    <button class="mt-2 btn-score" id="home-plus-1">+1</button>
+                    <button class="ml-3 btn-score" id="home-minus-1">-1</button>
+                    </br>
+                    <h5 class="mt-4 true-lies">AWAY SCORE</h5>
+                    <button class="mt-2 btn-score" id="away-plus-1">+1</button>
+                    <button class="ml-3 btn-score" id="away-minus-1">-1</button>
+                </div>
+                <div class="text-center mx-auto clear-both mt-4">
+                    <button class="btn-period" id="period-set">PERIOD</button>
+                </div>
+                <div class="text-center controller-pos-bonus">
+                    <h5 class="true-lies">POSSESSION</h5>
+                    <button class="mt-2 btn-pos-bon" id="home-possession">HOME</button>
+                    <button class="ml-3 btn-pos-bon" id="away-possession">AWAY</button>
+                </br>
+                    <h5 class="mt-4 true-lies">BONUS</h5>
+                    <button class="mt-2 btn-pos-bon" id="home-bonus">HOME</button>
+                    <button class="ml-3 btn-pos-bon" id="away-bonus">AWAY</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

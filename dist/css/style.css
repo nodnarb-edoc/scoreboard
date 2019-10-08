@@ -1,0 +1,172 @@
+@font-face { 
+    font-family: DS-Digital; src: url('DS-DIGII.TTF');
+}
+
+@font-face {
+    font-family: True-Lies; src: url('True_Lies.ttf');
+}
+
+textarea:focus, input:focus, button:focus {
+    outline: none !important;
+}
+
+body {
+    background-image: url("https://source.unsplash.com/bIkRZwv7CZg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input {
+    width: 81px;
+    text-align: center;
+    background: transparent;
+    color: #46ecf2;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 2px rgba(255,255,255,1) , 0 0 1px #46ecf2 , 0 0 2px #46ecf2 , 0 0 3px #46ecf2 ;
+    border: 3px solid #46ecf2;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #46ecf2 , 0 0 8px #46ecf2 , 0 0 10px #46ecf2 ;
+}
+
+button {
+    height: 32px;
+    width: 90px;
+    border-radius: 16px !important;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+.red {
+    color: #CB0B59;
+    text-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #CB0B59 , 0 0 8px #CB0B59 , 0 0 10px #CB0B59 ;
+}
+
+.true-lies {
+    font-family: True Lies;
+}
+
+.sb-background {
+    background-color: #05283C;
+    height: 55vh;
+    width: 70%;
+    margin-top: 24px;
+    border: 5px solid #46ecf2;
+    box-shadow: 0 0 6px rgba(255,255,255,1) , 0 0 9px rgba(255,255,255,1) , 0 0 6px #46ecf2 , 0 0 10px #46ecf2 , 0 0 12px #46ecf2 ;
+    color: #FB9125;
+    text-shadow: 0 0 .5px rgba(255,255,255,1) , 0 0 1px rgba(255,255,255,1) , 0 0 2px #FB9125 , 0 0 3px #FB9125 ;
+}
+
+.bonus {
+    margin-top: 80px;
+}
+
+#home-possession-display {
+    font-size: 3.5rem;
+}
+
+#away-possession-display {
+    font-size: 3.5rem;
+}
+
+.timer {
+    border: 3px solid #CB0B59;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #CB0B59 , 0 0 8px #CB0B59 , 0 0 10px #CB0B59 ;
+    height: 100px;
+}
+
+#team-home, #team-away {
+    font-size: 2rem;
+}
+
+#score-home, #score-away {
+    border: 3px solid #ea00d9;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #ea00d9 , 0 0 8px #ea00d9 , 0 0 10px #ea00d9 ;
+    height: 100px;
+    width: 110px;
+    /* margin-left: 40px; */
+    font-family: DS-Digital;
+    font-size: 6rem;
+    line-height: 6rem;
+    background: #242424;
+    color: #ea00d9;
+    text-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #ff00de , 0 0 8px #ff00de , 0 0 10px #ff00de ;
+}
+
+.period {
+    clear: both;
+    border: 3px solid #00ff9f;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #00ff9f , 0 0 8px #00ff9f , 0 0 10px #00ff9f ;
+    height: 70px;
+    width: 80px;
+    font-family: DS-Digital;
+    font-size: 4.5rem;
+    line-height: 4rem;
+    background: #242424;
+    color: #00ff9f;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 3px rgba(255,255,255,1) , 0 0 3px #00ff9f , 0 0 5px #00ff9f , 0 0 7px #00ff9f ;
+}
+
+#clock {
+    font-family: DS-Digital;
+    font-size: 7rem;
+    line-height: 5.8rem;
+    background: #242424;
+    color: #CB0B59;
+    text-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #CB0B59 , 0 0 8px #CB0B59 , 0 0 10px #CB0B59 ;
+}
+
+.controller-body {
+    background: #242424;
+    margin: 0 auto;
+    width: 90%;
+    height: 210px;
+    color: #ea00d9;
+    border: 3px solid #46ecf2;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #46ecf2 , 0 0 8px #46ecf2 , 0 0 10px #46ecf2 ;
+    border-radius: 50px;
+}
+
+.controller-score {
+    position: absolute;
+    bottom: 45px;
+    left: 140px;
+}
+
+.controller-pos-bonus {
+    position: absolute;
+    bottom: 45px;
+    right: 140px;
+}
+
+.btn-score {
+    background: transparent;
+    color: #ea00d9;
+    border: 3px solid #ea00d9;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #ea00d9 , 0 0 8px #ea00d9 , 0 0 10px #ea00d9 ;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 2px rgba(255,255,255,1) , 0 0 1px #ea00d9 , 0 0 2px #ea00d9 , 0 0 3px #ea00d9 ;
+}
+
+.btn-period {
+    background: transparent;
+    color: #00ff9f;
+    border: 3px solid #00ff9f;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #00ff9f , 0 0 8px #00ff9f , 0 0 10px #00ff9f ;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 2px rgba(255,255,255,1) , 0 0 1px #00ff9f , 0 0 2px #00ff9f , 0 0 3px #00ff9f ;
+}
+
+.btn-timer {
+    background: transparent;
+    color: #CB0B59;
+    border: 3px solid #CB0B59;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #CB0B59 , 0 0 8px #CB0B59 , 0 0 10px #CB0B59 ;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 2px rgba(255,255,255,1) , 0 0 1px #CB0B59 , 0 0 2px #CB0B59 , 0 0 3px #CB0B59 ;
+}
+
+.btn-pos-bon {
+    background: transparent;
+    color: #FB9125;
+    border: 3px solid #FB9125;
+    box-shadow: 0 0 2px rgba(255,255,255,1) , 0 0 4px rgba(255,255,255,1) , 0 0 5px #FB9125 , 0 0 8px #FB9125 , 0 0 10px #FB9125 ;
+    text-shadow: 0 0 1px rgba(255,255,255,1) , 0 0 2px rgba(255,255,255,1) , 0 0 1px #FB9125 , 0 0 2px #FB9125 , 0 0 3px #FB9125 ;
+}
